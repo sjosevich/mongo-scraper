@@ -29,16 +29,16 @@
 <div class="row">
     <div class="col s2"></div>
     <div class="col s8">
-        <h5>Notes:</h5>
-        {{#if article.note}}
-        {{#each article.note}}
+        <h5>Comments:</h5>
+        {{#if article.comment}}
+        {{#each article.comment}}
         <div class="card">
             <p id="nameComment">{{name}}</p>
             <p>{{body}}<p>
         </div>
         {{/each}}
         {{else}}
-        <p>No Notes Yet.</p>
+        <p>No Comments Yet.</p>
         {{/if}}
 
     </div>
