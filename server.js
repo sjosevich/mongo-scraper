@@ -26,7 +26,7 @@ app.engine(
 app.set("view engine", "handlebars");
 
 // Connect to the Mongo DB
-mongoose.connect("mongodb://localhost/scraper" || process.env.MONGODB_URI, { 
+mongoose.connect( process.env.MONGODB_URI || "mongodb://localhost/scraper" , { 
     useNewUrlParser: true,
     useUnifiedTopology: true 
 });
